@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="615dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="316dp"
+            android:layout_height="273dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="user"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/checkboxRememberMe"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:text="Remember me" />
+
+        <LinearLayout
+            android:layout_width="406dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="133dp"
+                android:layout_height="63dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#245C26"
+                android:onClick="onClick"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="121dp"
+                android:layout_height="62dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#245C26"
+                android:onClick="onClick"
+                android:text="Ingresar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
